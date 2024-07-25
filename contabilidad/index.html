@@ -1,9 +1,9 @@
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Universidad Autónoma de Coahuila</title>
+    <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
     <style>
@@ -14,51 +14,49 @@
             align-items: center;
         }
         .header-images img {
-            width: 100px;
+            width: 100px; /* Ajusta el tamaño de las imágenes según sea necesario */
             height: auto;
         }
-    </style>  
+    </style>
 </head>
-
 <body>
-    <div container>
+    <div class="container">
         <header class="text-center my-4">
             <div class="header-images">
-                <img src="logouade.png" alt="Imagen Izq">
+                <img src="ruta_a_la_imagen_izquierda.png" alt="Imagen Izquierda">
                 <div>
                     <h1>Universidad Autónoma de Coahuila</h1>
                     <h2>Facultad de Odontología Unidad Torreón</h2>
                     <h3>Departamento de Contabilidad</h3>
                 </div>
-                <img src="logoodonto.png" alt="Imagen Der">
+                <img src="ruta_a_la_imagen_derecha.png" alt="Imagen Derecha">
             </div>
         </header>
         <main>
-            <table>
-                <thead>
+            <table class="table table-striped">
+                <thead class="thead-dark">
                     <tr>
-                        <th>Num</th>
-                        <th>Descripción</th>
-                        <th>Ver</th>
-                        <th>Descargar</th>
+                        <th scope="col">Num</th>
+                        <th scope="col">Descripción</th>
+                        <th scope="col">Ver</th>
+                        <th scope="col">Descargar</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>1</td>
                         <td>Descripción del documento 1</td>
-                        <td><a href="muestra.pdf" target="_blank"><img src="img/document.svg" alt="Ver"></a></td>
-                        <td><a href="muestra.pdf" download><img src="img/file-download.svg" alt="Descargar"></a>
-                        </td>
+                        <td><a href="ruta_al_documento" target="_blank"><i class="bi bi-eye"></i></a></td>
+                        <td><a href="ruta_al_documento" download><i class="bi bi-download"></i></a></td>
                     </tr>
-                    
+                    <!-- Repite las filas según sea necesario -->
                 </tbody>
             </table>
         </main>
     </div>
+    <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>
