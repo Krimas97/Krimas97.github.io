@@ -4,17 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Universidad Autónoma de Coahuila</title>
-    <link rel="stylesheet" href="styles.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        .header-images {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header-images img {
+            width: 100px;
+            height: auto;
+        }
+    </style>  
 </head>
 
 <body>
     <div container>
-        <header>
-            <h1>Universidad Autónoma de Coahuila</h1>
-            <h2>Facultad de Odontología Unidad Torreón</h2>
-            <h3>Departamento de Contabilidad</h3>
-            
+        <header class="text-center my-4">
+            <div class="header-images">
+                <img src="ruta_a_la_imagen_izquierda.png" alt="Imagen Izq">
+                <div>
+                    <h1>Universidad Autónoma de Coahuila</h1>
+                    <h2>Facultad de Odontología Unidad Torreón</h2>
+                    <h3>Departamento de Contabilidad</h3>
+                </div>
+                <img src="ruta_a_la_imagen_derecha.png" alt="Imagen Der">
+            </div>
         </header>
         <main>
             <table>
